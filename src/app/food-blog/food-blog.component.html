@@ -1,0 +1,11 @@
+<div class="food-blog">
+  <h1>Welcome to the Food Blog</h1>
+   <img src="/assets/images/Free Photo _ Top view table full of delicious food composition.jpeg" alt="Food Blog Image">
+  <div *ngFor="let item of foodItems" class="food-item" appCustomStyle>
+    <h2 appCustomStyle>{{ item.name }}</h2>
+    
+    <p>{{ item.description }}</p>
+  </div>
+  <button (click)="viewAuthorDetails()"  appCustomStyle>View Author Details</button>
+</div>
+
